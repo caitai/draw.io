@@ -1,1 +1,43 @@
-<mxfile host="app.diagrams.net" modified="2022-09-29T09:36:15.179Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" version="20.3.7" etag="O_zZFFi5N8oD2ZQT-8BD" type="github"><diagram id="tfYNttf0wB6JPHkOrvM2">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-09-29T09:58:27.535Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="gvPzK47l2aMDRlqlIDfo" version="20.3.7" type="github">
+  <diagram id="tfYNttf0wB6JPHkOrvM2" name="第 1 页">
+    <mxGraphModel dx="1117" dy="723" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="7ae39hmuQD0udzq62GQB-18" style="edgeStyle=elbowEdgeStyle;rounded=1;sketch=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#D6AFC7;strokeWidth=2;" edge="1" parent="1" source="7ae39hmuQD0udzq62GQB-1" target="7ae39hmuQD0udzq62GQB-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7ae39hmuQD0udzq62GQB-1" value="InnoDB将旧值&lt;br&gt;写入undo log" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fillWeight=4;hachureGap=8;hachureAngle=45;fillColor=#FFD9E4;sketch=1;" vertex="1" parent="1">
+          <mxGeometry x="244" y="430" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7ae39hmuQD0udzq62GQB-14" style="edgeStyle=elbowEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#D6AFC7;strokeWidth=2;sketch=1;" edge="1" parent="1" source="7ae39hmuQD0udzq62GQB-3" target="7ae39hmuQD0udzq62GQB-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7ae39hmuQD0udzq62GQB-3" value="InnoDB将新值&lt;br&gt;写入BufferPool" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fillWeight=4;hachureGap=8;hachureAngle=45;fillColor=#FFD9E4;sketch=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="560" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7ae39hmuQD0udzq62GQB-15" style="edgeStyle=elbowEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#D6AFC7;strokeWidth=2;sketch=1;" edge="1" parent="1" source="7ae39hmuQD0udzq62GQB-4" target="7ae39hmuQD0udzq62GQB-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7ae39hmuQD0udzq62GQB-4" value="InnoDB写redo log&lt;br&gt;并标记为Prepare" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fillWeight=4;hachureGap=8;hachureAngle=45;fillColor=#FFD9E4;sketch=1;" vertex="1" parent="1">
+          <mxGeometry x="244" y="690" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7ae39hmuQD0udzq62GQB-17" style="edgeStyle=elbowEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;strokeColor=#D6AFC7;strokeWidth=2;sketch=1;" edge="1" parent="1" source="7ae39hmuQD0udzq62GQB-5" target="7ae39hmuQD0udzq62GQB-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7ae39hmuQD0udzq62GQB-5" value="执行器执行bin log" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fillWeight=4;hachureGap=8;hachureAngle=45;fillColor=#FFD9E4;sketch=1;" vertex="1" parent="1">
+          <mxGeometry x="244" y="810" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7ae39hmuQD0udzq62GQB-7" value="InnoDB写redo log&lt;br&gt;并标记为Commit" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fillWeight=4;hachureGap=8;hachureAngle=45;fillColor=#FFD9E4;sketch=1;" vertex="1" parent="1">
+          <mxGeometry x="244" y="930" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7ae39hmuQD0udzq62GQB-13" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;flipH=1;fillColor=#FFD9E4;size=0.5;strokeWidth=2;strokeColor=#FFB5FD;perimeterSpacing=8;shadow=0;sketch=1;treeMoving=0;noLabel=0;" vertex="1" parent="1">
+          <mxGeometry x="440" y="715" width="20" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="7ae39hmuQD0udzq62GQB-19" value="两阶段提交" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;shadow=0;sketch=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="460" y="825" width="80" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
